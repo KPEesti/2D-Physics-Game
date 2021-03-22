@@ -3,13 +3,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float speed;
-
+    
     private bool facingRight;
     private float horizontalMovement;
+    private Transform player;
 
     private void Start()
     {
         facingRight = true;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void Update()
@@ -28,6 +30,6 @@ public class Player : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        player.localScale = new Vector2(-player.localScale.x, player.localScale.y);
     }
 }
