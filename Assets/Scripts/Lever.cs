@@ -9,7 +9,9 @@ public class Lever : MonoBehaviour
     private void Update()
     {
         if (isEntered && Input.GetButtonDown("Submit"))
+        {
             LeverAction?.Invoke();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
