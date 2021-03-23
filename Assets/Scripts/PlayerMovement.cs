@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Lever;
 
 public class PlayerMovement : MonoBehaviour
 {
