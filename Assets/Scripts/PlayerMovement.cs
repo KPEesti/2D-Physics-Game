@@ -34,5 +34,5 @@ public class PlayerMovement : MonoBehaviour
         player.localScale = new Vector2(-player.localScale.x, player.localScale.y);
     }
 
-    public void Rofl() => Debug.Log("все работает ауе");
+    public void Rofl() => Debug.Log("все работает ауе");//нужно будет удалить
 }
