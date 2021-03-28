@@ -9,7 +9,6 @@ public class SpawnSmth : MonoBehaviour
 
     public void StartSpawning()
     {
-        Debug.Log("включил второй рычаг");
         StartCoroutine(Spawn());
     }
 
@@ -17,7 +16,6 @@ public class SpawnSmth : MonoBehaviour
     {
         for (var i = 0; i < amount; i++)
         {
-            Instantiate(dropPrefab, transform.position, Quaternion.identity);
             Instantiate(dropPrefab, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(delay);
         }
