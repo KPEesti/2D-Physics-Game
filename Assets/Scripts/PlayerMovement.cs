@@ -33,4 +33,6 @@ public class PlayerMovement : MonoBehaviour
         facingRight = !facingRight;
         player.localScale = new Vector2(-player.localScale.x, player.localScale.y);
     }
+
+    public void Rofl() => Debug.Log("все работает ауе");
 }

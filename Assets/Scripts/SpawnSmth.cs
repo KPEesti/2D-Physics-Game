@@ -7,9 +7,13 @@ public class SpawnSmth : MonoBehaviour
     [SerializeField] private GameObject dropPrefab;
     [SerializeField] private float delay;
 
-    private Coroutine Do() => StartCoroutine(Spawn());
+    public void StartSpawning()
+    {
+        Debug.Log("включил второй рычаг");
+        StartCoroutine(Spawn());
+    }
 
-    private IEnumerator Spawn()
+    public IEnumerator Spawn()
     {
         for (var i = 0; i < amount; i++)
         {
@@ -18,8 +22,4 @@ public class SpawnSmth : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
-
-    private void OnEnable() => Lever.LeverAction += Do;
-
-    private void OnDisable() => Lever.LeverAction -= Do;
 }

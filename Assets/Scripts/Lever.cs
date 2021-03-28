@@ -1,17 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Lever : MonoBehaviour
 {
     private bool isEntered;
-    public delegate Coroutine Act();
-    public static event Act LeverAction;
+    public UnityEvent SpawnEvent;
 
     private void Update()
     {
         if (isEntered && Input.GetButtonDown("Submit"))
-        {
-            LeverAction?.Invoke();
-        }
+            SpawnEvent?.Invoke();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
