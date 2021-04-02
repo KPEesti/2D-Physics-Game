@@ -10,7 +10,7 @@ public class Lever : MonoBehaviour
 
     private void Update()
     {
-        if (isEntered && Input.GetButtonDown("Submit") && !isActive)
+        if (isEntered && !isActive && Input.GetButtonDown("Submit"))
         {
             SpawnEvent?.Invoke();
             isActive = true;
