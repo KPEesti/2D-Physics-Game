@@ -123,6 +123,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9851646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9851647}
+  - component: {fileID: 9851648}
+  m_Layer: 0
+  m_Name: legs
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9851647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9851646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.098, y: -0.652, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 843558664}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &9851648
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9851646}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.022612114, y: 0.10881978}
+  serializedVersion: 2
+  m_Radius: 0.36071062
 --- !u!1 &198370010
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +181,7 @@ GameObject:
   - component: {fileID: 198370011}
   - component: {fileID: 198370013}
   - component: {fileID: 198370012}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +285,7 @@ GameObject:
   - component: {fileID: 475947249}
   - component: {fileID: 475947251}
   - component: {fileID: 475947250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: downBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 502627295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +510,7 @@ GameObject:
   - component: {fileID: 569007707}
   - component: {fileID: 569007709}
   - component: {fileID: 569007708}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: upperBorad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +619,7 @@ GameObject:
   - component: {fileID: 652861856}
   - component: {fileID: 652861858}
   - component: {fileID: 652861857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +723,7 @@ GameObject:
   - component: {fileID: 789676376}
   - component: {fileID: 789676378}
   - component: {fileID: 789676377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: rightBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,11 +848,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843558663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.75, y: 0, z: 0}
+  m_LocalPosition: {x: -1.75, y: 0.19, z: 0}
   m_LocalScale: {x: 0.9625, y: 1, z: 1}
   m_Children:
   - {fileID: 860470243}
   - {fileID: 519420032}
+  - {fileID: 9851647}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -822,6 +870,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  jumpForce: 5
+  leg: {fileID: 9851647}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 192
 --- !u!50 &843558666
 Rigidbody2D:
   serializedVersion: 4
@@ -962,7 +1015,7 @@ GameObject:
   - component: {fileID: 1266750910}
   - component: {fileID: 1266750912}
   - component: {fileID: 1266750911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stoneHalf_mid (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1124,7 @@ GameObject:
   - component: {fileID: 1328724881}
   - component: {fileID: 1328724882}
   - component: {fileID: 1328724883}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1244,7 @@ GameObject:
   - component: {fileID: 1845406486}
   - component: {fileID: 1845406488}
   - component: {fileID: 1845406487}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stoneHalf_mid (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1353,7 @@ GameObject:
   - component: {fileID: 1851575874}
   - component: {fileID: 1851575876}
   - component: {fileID: 1851575875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950291819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: waterpool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1492,7 @@ GameObject:
   - component: {fileID: 1953680946}
   - component: {fileID: 1953680948}
   - component: {fileID: 1953680947}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: leftBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,6 +1645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lever
       objectReference: {fileID: 0}
+    - target: {fileID: 4689015873529949847, guid: 990a97b4a38e55a4abb38651b0b1bd73, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4689015873529949851, guid: 990a97b4a38e55a4abb38651b0b1bd73, type: 3}
       propertyPath: SpawnEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1631,7 +1688,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7001541696432904124, guid: 628df82ae54564e4d988a4370aad152a, type: 3}
       propertyPath: delay
-      value: 0.3
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7001541696432904124, guid: 628df82ae54564e4d988a4370aad152a, type: 3}
       propertyPath: amount
@@ -1688,6 +1745,10 @@ PrefabInstance:
     - target: {fileID: 7001541696432904130, guid: 628df82ae54564e4d988a4370aad152a, type: 3}
       propertyPath: m_Name
       value: shower
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001541696432904130, guid: 628df82ae54564e4d988a4370aad152a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 628df82ae54564e4d988a4370aad152a, type: 3}

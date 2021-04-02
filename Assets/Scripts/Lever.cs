@@ -3,13 +3,18 @@ using UnityEngine.Events;
 
 public class Lever : MonoBehaviour
 {
-    private bool isEntered;
     public UnityEvent SpawnEvent;
+
+    private bool isEntered;
+    private bool isActive;
 
     private void Update()
     {
-        if (isEntered && Input.GetButtonDown("Submit"))
+        if (isEntered && Input.GetButtonDown("Submit") && !isActive)
+        {
             SpawnEvent?.Invoke();
+            isActive = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
