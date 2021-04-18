@@ -18,6 +18,8 @@ public class SpawnSmth : MonoBehaviour
         { 
             Instantiate(dropPrefab, transform.position, Quaternion.identity);
             Instantiate(dropPrefab, transform.position, Quaternion.identity);
+            Instantiate(dropPrefab, transform.position, Quaternion.identity);
+            Instantiate(dropPrefab, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(delay);
         }
     }
