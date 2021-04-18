@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: waterScreen
-  m_Shader: {fileID: 4800000, guid: 45b760856eb20e24f8ee161dd5bdf45e, type: 3}
+  m_Name: CHANGE WATER
+  m_Shader: {fileID: 4800000, guid: 92044f1bd34085d4c8e10dad1291f65e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,9 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 8600000, guid: 727f5d71abd28b04bb6fbf90660af1fa, type: 2}
+        m_Texture: {fileID: 8400000, guid: 71635a8043d897d49b12a6fd48fc9870, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _Cutoff: 0.05
+    m_Colors:
+    - _Color: {r: 0.16862747, g: 0.6719379, b: 0.972549, a: 1}
   m_BuildTextureStacks: []
