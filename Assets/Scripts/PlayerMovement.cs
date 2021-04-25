@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using static Lever;
 
@@ -19,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
         facingRight = true;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void TestEvent()//не нужный метод, он здесь для тестирования event-ов
+    {
+        Debug.Log("event is working");
     }
 
     private void Update()

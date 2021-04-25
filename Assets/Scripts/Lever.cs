@@ -17,12 +17,12 @@ public class Lever : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         isEntered = true;
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         isEntered = false;
     }
