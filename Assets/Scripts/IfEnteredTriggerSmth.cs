@@ -15,7 +15,7 @@ public class IfEnteredTriggerSmth : MonoBehaviour
     {
         if (!isActive)
         { 
-            Debug.Log("pizda");
+            Debug.Log("enter");
             DoSmth?.Invoke();
             isActive = true;
         }
