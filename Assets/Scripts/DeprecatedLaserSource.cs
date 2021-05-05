@@ -31,15 +31,7 @@ public class DeprecatedLaserSource : MonoBehaviour
             if (hit.collider.tag == "Mirror")
             {
                 GenReflection(hit);
-
-            } else
-            {
-                line.SetPositions(GetStandartLine());
             }
-        } else
-        {
-            line.SetPosition(1, pos + transform.right * distance);
-            line.SetPositions(GetStandartLine());
         }
     }
 
@@ -60,9 +52,8 @@ public class DeprecatedLaserSource : MonoBehaviour
 
         while (refl > 0)
         {
-            Vector2 startW = transform.TransformPoint(line.GetPosition(index - 1));
-            Vector2 vectorW = transform.TransformPoint(line.GetPosition(index - 1))
-                - transform.TransformPoint(line.GetPosition(index - 2));
+            Vector2 startW = line.GetPosition(index - 1);
+            Vector2 vectorW = line.GetPosition(index - 1) - line.GetPosition(index - 2);
 
             Vector2 reflectedW = Vector2.Reflect(vectorW.normalized, normal);
             var raycastW = Physics2D.Raycast(startW, reflectedW.normalized, 30);
@@ -71,20 +62,17 @@ public class DeprecatedLaserSource : MonoBehaviour
             {
                 //curHit = raycastW;
                 normal = raycastW.normal;
-                Debug.Log("Normal: "+normal);
                 Vector3 newPointW = new Vector3(raycastW.point.x, raycastW.point.y, 0);
-                line.SetPosition(index, transform.InverseTransformPoint(newPointW));
+                line.SetPosition(index, newPointW);
                 index++;
 
                 if (raycastW.collider.tag != "Mirror") break;
             }
             else
             {
-                Vector3 reflectedL = transform.InverseTransformPoint(reflectedW)
-                    - transform.InverseTransformPoint(new Vector3(0, 0, 0));
                 Vector3 s = line.GetPosition(index - 1);
 
-                var newPos = s + reflectedL * 30;
+                var newPos = s + (Vector3) reflectedW * 30;
                 newPos.z = 0;
                 line.SetPosition(index, newPos);
                 line.positionCount = index + 1;

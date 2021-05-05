@@ -11,7 +11,6 @@ public class NewLaserSource : MonoBehaviour
     private int laserDistance = 100;
     private Vector3 pos = new Vector3();
     private Vector3 directLaser = new Vector3();
-    bool loopActive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,6 @@ public class NewLaserSource : MonoBehaviour
 
     private void DrawLaser()
     {
-        loopActive = true;
         int countLaser = 1;
 
         pos = transform.position;
@@ -35,7 +33,7 @@ public class NewLaserSource : MonoBehaviour
         lineRenderer.positionCount = countLaser;
         lineRenderer.SetPosition(0, pos);
 
-        while (loopActive)
+        while (true)
         {
             var hit = Physics2D.Raycast(pos, directLaser, laserDistance);
             if (hit)
@@ -43,21 +41,21 @@ public class NewLaserSource : MonoBehaviour
                 countLaser++;
                 lineRenderer.positionCount = countLaser;
                 directLaser = Vector3.Reflect(directLaser, hit.normal);
+                // передвигаем новую стартовую точку чуть вперед по отраженному направлению, так как она может оказаться
+                // внутри объекта из-за погрешности вычислений
                 pos = (Vector2)directLaser.normalized + hit.point;
-                lineRenderer.SetPosition(countLaser - 1, hit.point);
+                lineRenderer.SetPosition(countLaser - 1, hit.point); // при этом рисуем точку касания без изменений
             }
             else
             {
                 countLaser++;
                 lineRenderer.positionCount = countLaser;
                 lineRenderer.SetPosition(countLaser - 1, pos + (directLaser.normalized * laserDistance));
-                loopActive = false;
+                break;
             }
 
             if (countLaser > numberReflectionMax)
-            {
-                loopActive = false;
-            }
+                break;
         }
     }
 }
