@@ -54,7 +54,7 @@ public class NewLaserSource : MonoBehaviour
                 break;
             }
 
-            if (countLaser > numberReflectionMax)
+            if (countLaser > numberReflectionMax || !hit.collider.tag.Equals("Mirror"))
                 break;
         }
     }
