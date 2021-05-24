@@ -7,6 +7,9 @@ public class NewLaserSource : MonoBehaviour
 {
     public int numberReflectionMax = 5;
 
+    [HideInInspector]
+    public GameObject lastRaycastedObject;
+
     private LineRenderer lineRenderer;
     private int laserDistance = 100;
     private Vector3 pos = new Vector3();
@@ -35,7 +38,7 @@ public class NewLaserSource : MonoBehaviour
 
         while (true)
         {
-            var hit = Physics2D.Raycast(pos, directLaser, laserDistance);
+            var hit = Physics2D.Raycast(pos, directLaser, laserDistance, 1 << LayerMask.GetMask("Defualt"));
             if (hit)
             {
                 countLaser++;
@@ -45,6 +48,9 @@ public class NewLaserSource : MonoBehaviour
                 // внутри объекта из-за погрешности вычислений
                 pos = (Vector2)directLaser.normalized + hit.point;
                 lineRenderer.SetPosition(countLaser - 1, hit.point); // при этом рисуем точку касания без изменений
+
+                lastRaycastedObject = hit.collider.gameObject;
+                Debug.Log("Last raycasted obj: "+lastRaycastedObject.name);
             }
             else
             {
