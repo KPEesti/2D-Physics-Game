@@ -17,6 +17,11 @@ public class Flat_Level_Controller : MonoBehaviour
     public void UpdateAppleCount()
     {
         _appleCount++;
-        Debug.Log(_appleCount);
+        Debug.Log($"Количество собранных тыблок - {_appleCount} / 3");
+    }
+
+    public void TaskMesage()
+    {
+        Debug.Log("Задание по сбору тыблок принято!!!");
     }
 }
