@@ -38,7 +38,7 @@ public class NewLaserSource : MonoBehaviour
 
         while (true)
         {
-            var hit = Physics2D.Raycast(pos, directLaser, laserDistance, LayerMask.GetMask("Default"));
+            var hit = Physics2D.Raycast(pos, directLaser, laserDistance, LayerMask.GetMask("Default", "world"));
             if (hit)
             {
                 countLaser++;
