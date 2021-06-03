@@ -23,7 +23,7 @@ public class CrystalButton : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        crystalTransform.Rotate(0, 0, degreesPerClick);
+        crystalTransform.Rotate(0, 0, degreesPerClick * Time.deltaTime);
         Debug.Log("Crystal button is pressed");
     }
 }
