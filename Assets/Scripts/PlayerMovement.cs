@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-        isGrounded = Physics2D.OverlapCircle(leg.position, 0.2f, whatIsGround);
+        isGrounded = Physics2D.OverlapCircle(leg.position, 0.4f, whatIsGround);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
             rb.velocity = Vector2.up * jumpForce;
@@ -48,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        player.localScale = new Vector2(-player.localScale.x, player.localScale.y);
+        player.localScale = new Vector3(-player.localScale.x, player.localScale.y, player.localScale.z);
+    }
+
+    public void TestTrigger()
+    {
+        Debug.Log("Игрок вошёл в триггер");
     }
 }

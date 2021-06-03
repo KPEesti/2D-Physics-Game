@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lever
-  - legs
+  - legs - Wall
+  - Target
+  - Mirror
   - 2d water
   layers:
   - Default
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - 2d Water
   - world
-  - 
+  - BackGround
   - 
   - 
   - 
