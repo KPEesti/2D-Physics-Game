@@ -42,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        player.localScale = new Vector2(-player.localScale.x, player.localScale.y);
+        player.localScale = new Vector3(-player.localScale.x, player.localScale.y, player.localScale.z);
+    }
+
+    public void TestTrigger()
+    {
+        Debug.Log("Игрок вошёл в триггер");
     }
 }
