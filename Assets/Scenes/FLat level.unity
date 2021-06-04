@@ -908,8 +908,9 @@ GameObject:
   m_Component:
   - component: {fileID: 90516182}
   - component: {fileID: 90516183}
+  - component: {fileID: 90516184}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -980,6 +981,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &90516184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90516181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &92560801
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +1004,9 @@ GameObject:
   m_Component:
   - component: {fileID: 92560802}
   - component: {fileID: 92560803}
+  - component: {fileID: 92560804}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,6 +1077,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &92560804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92560801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &118490807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,8 +1321,9 @@ GameObject:
   m_Component:
   - component: {fileID: 128572917}
   - component: {fileID: 128572918}
+  - component: {fileID: 128572919}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1365,6 +1394,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &128572919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128572916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!4 &133168292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 326587634655236553, guid: 786c9a6de5b1c10468cb4894c9900283, type: 3}
@@ -1693,8 +1735,9 @@ GameObject:
   m_Component:
   - component: {fileID: 180690983}
   - component: {fileID: 180690982}
+  - component: {fileID: 180690984}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1765,6 +1808,19 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &180690984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180690981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &189233636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,8 +2272,9 @@ GameObject:
   m_Component:
   - component: {fileID: 257912295}
   - component: {fileID: 257912296}
+  - component: {fileID: 257912297}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2288,6 +2345,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &257912297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257912294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &257941592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,8 +2368,9 @@ GameObject:
   m_Component:
   - component: {fileID: 257941593}
   - component: {fileID: 257941594}
+  - component: {fileID: 257941595}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2370,6 +2441,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &257941595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257941592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &260809484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,8 +2628,9 @@ GameObject:
   m_Component:
   - component: {fileID: 275686931}
   - component: {fileID: 275686932}
+  - component: {fileID: 275686933}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2616,6 +2701,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &275686933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275686930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &280488853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,6 +3358,23 @@ Transform:
   m_Father: {fileID: 707633567}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &353509463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3245519199306794658, guid: 86e8705195a8291408dff5c4658befda, type: 3}
+  m_PrefabInstance: {fileID: 1906044735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &353509467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353509463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f9dc76e1507b542bc03effd9dbd22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &359485431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,8 +3385,9 @@ GameObject:
   m_Component:
   - component: {fileID: 359485432}
   - component: {fileID: 359485433}
+  - component: {fileID: 359485434}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3342,6 +3458,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &359485434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359485431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &363655104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,8 +4530,9 @@ GameObject:
   m_Component:
   - component: {fileID: 428805703}
   - component: {fileID: 428805702}
+  - component: {fileID: 428805704}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4473,6 +4603,19 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428805704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428805701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &438665999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,8 +4708,9 @@ GameObject:
   m_Component:
   - component: {fileID: 439997173}
   - component: {fileID: 439997174}
+  - component: {fileID: 439997175}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4637,6 +4781,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &439997175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439997172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &443124825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4729,8 +4886,9 @@ GameObject:
   m_Component:
   - component: {fileID: 449306648}
   - component: {fileID: 449306647}
+  - component: {fileID: 449306649}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4801,6 +4959,19 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449306649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449306646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &453879221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,8 +4982,9 @@ GameObject:
   m_Component:
   - component: {fileID: 453879222}
   - component: {fileID: 453879223}
+  - component: {fileID: 453879224}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4883,6 +5055,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &453879224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453879221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &466175598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5327,8 +5512,9 @@ GameObject:
   m_Component:
   - component: {fileID: 526300816}
   - component: {fileID: 526300817}
+  - component: {fileID: 526300818}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5399,6 +5585,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &526300818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526300815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &532217179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,8 +5608,9 @@ GameObject:
   m_Component:
   - component: {fileID: 532217180}
   - component: {fileID: 532217181}
+  - component: {fileID: 532217182}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5481,6 +5681,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &532217182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532217179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1001 &541667895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6235,8 +6448,9 @@ GameObject:
   m_Component:
   - component: {fileID: 625275661}
   - component: {fileID: 625275662}
+  - component: {fileID: 625275663}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6307,6 +6521,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &625275663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625275660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &646594769
 GameObject:
   m_ObjectHideFlags: 0
@@ -6538,8 +6765,9 @@ GameObject:
   m_Component:
   - component: {fileID: 667596809}
   - component: {fileID: 667596810}
+  - component: {fileID: 667596811}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6610,6 +6838,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &667596811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667596808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &707633566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6783,6 +7024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 709726285}
+  - component: {fileID: 709726286}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -6853,6 +7095,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &709726286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709726284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04733cb17a71325408ffada225998f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxCamera: {fileID: 353509467}
 --- !u!1 &736067473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,8 +7118,9 @@ GameObject:
   m_Component:
   - component: {fileID: 736067474}
   - component: {fileID: 736067475}
+  - component: {fileID: 736067476}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6935,6 +7191,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &736067476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736067473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &740460723
 GameObject:
   m_ObjectHideFlags: 0
@@ -7543,8 +7812,9 @@ GameObject:
   m_Component:
   - component: {fileID: 819808566}
   - component: {fileID: 819808567}
+  - component: {fileID: 819808568}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7615,6 +7885,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &819808568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819808565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &829319283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,8 +7908,9 @@ GameObject:
   m_Component:
   - component: {fileID: 829319284}
   - component: {fileID: 829319285}
+  - component: {fileID: 829319286}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7697,6 +7981,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &829319286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829319283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &834193927
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,8 +8402,9 @@ GameObject:
   m_Component:
   - component: {fileID: 866464759}
   - component: {fileID: 866464760}
+  - component: {fileID: 866464761}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8177,6 +8475,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &866464761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866464758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &866779206
 GameObject:
   m_ObjectHideFlags: 0
@@ -8679,8 +8990,9 @@ GameObject:
   m_Component:
   - component: {fileID: 936420025}
   - component: {fileID: 936420026}
+  - component: {fileID: 936420027}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8751,6 +9063,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &936420027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936420024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &939968188
 GameObject:
   m_ObjectHideFlags: 0
@@ -9089,8 +9414,9 @@ GameObject:
   m_Component:
   - component: {fileID: 977537561}
   - component: {fileID: 977537562}
+  - component: {fileID: 977537563}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9161,6 +9487,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &977537563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977537560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &981536675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9335,8 +9674,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1002237006}
   - component: {fileID: 1002237007}
+  - component: {fileID: 1002237008}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9407,6 +9747,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1002237008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002237005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1012609529
 GameObject:
   m_ObjectHideFlags: 0
@@ -9417,8 +9770,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1012609530}
   - component: {fileID: 1012609531}
+  - component: {fileID: 1012609532}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9489,6 +9843,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1012609532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012609529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1001 &1022729435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9814,8 +10181,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1047816853}
   - component: {fileID: 1047816854}
+  - component: {fileID: 1047816855}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9886,6 +10254,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1047816855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047816852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1048742925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9978,8 +10359,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1063966581}
   - component: {fileID: 1063966582}
+  - component: {fileID: 1063966584}
+  - component: {fileID: 1063966583}
   m_Layer: 0
-  m_Name: Sky
+  m_Name: Layer-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10050,6 +10433,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1063966583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063966580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
+--- !u!114 &1063966584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063966580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1077605745
 GameObject:
   m_ObjectHideFlags: 0
@@ -10470,8 +10879,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1127455973}
   - component: {fileID: 1127455974}
+  - component: {fileID: 1127455975}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10542,6 +10952,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1127455975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127455972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!4 &1133901354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4582399185478753435, guid: 66f37672bc8df0545a2cafb4439a7647, type: 3}
@@ -10778,8 +11201,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1165781437}
   - component: {fileID: 1165781438}
+  - component: {fileID: 1165781439}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10850,6 +11274,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1165781439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165781436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1172672715
 GameObject:
   m_ObjectHideFlags: 0
@@ -10942,8 +11379,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1176140160}
   - component: {fileID: 1176140161}
+  - component: {fileID: 1176140162}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11014,6 +11452,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1176140162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176140159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1180599727
 GameObject:
   m_ObjectHideFlags: 0
@@ -11106,8 +11557,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1184973039}
   - component: {fileID: 1184973038}
+  - component: {fileID: 1184973040}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11178,6 +11630,19 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184973040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184973037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1207873883
 GameObject:
   m_ObjectHideFlags: 0
@@ -11188,8 +11653,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1207873884}
   - component: {fileID: 1207873885}
+  - component: {fileID: 1207873886}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11260,6 +11726,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1207873886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207873883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1212578991
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,8 +11831,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1215420977}
   - component: {fileID: 1215420978}
+  - component: {fileID: 1215420979}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11424,6 +11904,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1215420979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215420976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1216219739
 GameObject:
   m_ObjectHideFlags: 0
@@ -12948,8 +13441,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1473850613}
   - component: {fileID: 1473850614}
+  - component: {fileID: 1473850615}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13020,6 +13514,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1473850615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473850612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1484818423
 GameObject:
   m_ObjectHideFlags: 0
@@ -13030,8 +13537,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1484818424}
   - component: {fileID: 1484818425}
+  - component: {fileID: 1484818426}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13102,6 +13610,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1484818426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484818423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1488108645
 GameObject:
   m_ObjectHideFlags: 0
@@ -13358,8 +13879,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1510957687}
   - component: {fileID: 1510957688}
+  - component: {fileID: 1510957689}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13430,6 +13952,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1510957689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510957686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1520933640
 GameObject:
   m_ObjectHideFlags: 0
@@ -13440,8 +13975,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1520933641}
   - component: {fileID: 1520933642}
+  - component: {fileID: 1520933643}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13512,6 +14048,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1520933643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520933640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1524079614
 GameObject:
   m_ObjectHideFlags: 0
@@ -13604,8 +14153,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1524824873}
   - component: {fileID: 1524824874}
+  - component: {fileID: 1524824875}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13676,6 +14226,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1524824875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524824872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1540775040
 GameObject:
   m_ObjectHideFlags: 0
@@ -13850,8 +14413,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1566892109}
   - component: {fileID: 1566892110}
+  - component: {fileID: 1566892111}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13922,6 +14486,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1566892111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566892108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1589599993
 GameObject:
   m_ObjectHideFlags: 0
@@ -13932,8 +14509,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1589599995}
   - component: {fileID: 1589599994}
+  - component: {fileID: 1589599997}
+  - component: {fileID: 1589599996}
   m_Layer: 0
-  m_Name: Sky
+  m_Name: Layer-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14004,6 +14583,32 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589599996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589599993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
+--- !u!114 &1589599997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589599993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1592269432
 GameObject:
   m_ObjectHideFlags: 0
@@ -14279,8 +14884,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1627204642}
   - component: {fileID: 1627204643}
+  - component: {fileID: 1627204644}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14351,6 +14957,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1627204644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627204641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1628057325
 GameObject:
   m_ObjectHideFlags: 0
@@ -16260,8 +16879,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1801815497}
   - component: {fileID: 1801815498}
+  - component: {fileID: 1801815500}
+  - component: {fileID: 1801815499}
   m_Layer: 0
-  m_Name: Sky
+  m_Name: Layer-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16332,6 +16953,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1801815499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801815496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
+--- !u!114 &1801815500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801815496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1802088876
 GameObject:
   m_ObjectHideFlags: 0
@@ -17339,8 +17986,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1861126208}
   - component: {fileID: 1861126209}
+  - component: {fileID: 1861126210}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Layer-12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17411,6 +18059,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1861126210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861126207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1862455179
 GameObject:
   m_ObjectHideFlags: 0
@@ -18078,8 +18739,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1940769200}
   - component: {fileID: 1940769201}
+  - component: {fileID: 1940769202}
   m_Layer: 0
-  m_Name: spruce_back
+  m_Name: Layer-22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18150,6 +18812,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1940769202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940769199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1945570329
 GameObject:
   m_ObjectHideFlags: 0
@@ -18324,8 +18999,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1953668065}
   - component: {fileID: 1953668066}
+  - component: {fileID: 1953668067}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18396,6 +19072,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1953668067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953668064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1954271750
 GameObject:
   m_ObjectHideFlags: 0
@@ -18406,8 +19095,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1954271751}
   - component: {fileID: 1954271752}
+  - component: {fileID: 1954271753}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18478,6 +19168,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1954271753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954271750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &1961922111
 GameObject:
   m_ObjectHideFlags: 0
@@ -18724,8 +19427,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1988107234}
   - component: {fileID: 1988107235}
+  - component: {fileID: 1988107236}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18796,6 +19500,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1988107236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988107233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &2009286952
 GameObject:
   m_ObjectHideFlags: 0
@@ -18806,8 +19523,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2009286953}
   - component: {fileID: 2009286954}
+  - component: {fileID: 2009286955}
   m_Layer: 0
-  m_Name: mountains
+  m_Name: Layer-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18878,6 +19596,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009286955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009286952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &2015896306
 GameObject:
   m_ObjectHideFlags: 0
@@ -19578,8 +20309,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2105120481}
   - component: {fileID: 2105120480}
+  - component: {fileID: 2105120483}
+  - component: {fileID: 2105120482}
   m_Layer: 0
-  m_Name: Sky
+  m_Name: Layer-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19650,6 +20383,32 @@ Transform:
   m_Father: {fileID: 709726285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105120482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105120479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
+--- !u!114 &2105120483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105120479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &2113427898
 GameObject:
   m_ObjectHideFlags: 0
@@ -19742,8 +20501,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2121115577}
   - component: {fileID: 2121115578}
+  - component: {fileID: 2121115579}
   m_Layer: 0
-  m_Name: spruce_front
+  m_Name: Layer-42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19814,6 +20574,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2121115579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121115576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a94503cc4d2e94ca6e54149ce1d3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0
 --- !u!1 &2132205053
 GameObject:
   m_ObjectHideFlags: 0
