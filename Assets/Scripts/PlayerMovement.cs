@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform leg;
     [SerializeField] private LayerMask whatIsGround;
 
+    public bool isGrounded;
+    public bool isWalking;
+
     private bool facingRight;
     private float horizontalMovement;
     private Transform player;
     private Rigidbody2D rb;
-    private bool isGrounded;
 
     private void Start()
     {
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
+        isWalking = horizontalMovement == 0;
 
         isGrounded = Physics2D.OverlapCircle(leg.position, 0.4f, whatIsGround);
 

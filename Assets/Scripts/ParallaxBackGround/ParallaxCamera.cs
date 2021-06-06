@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ParallaxCamera : MonoBehaviour
@@ -14,7 +15,7 @@ public class ParallaxCamera : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.x != oldPosition)
+        if (Math.Abs(transform.position.x - oldPosition) > 10e-10)
         {
             if (onCameraTranslate != null)
             {
