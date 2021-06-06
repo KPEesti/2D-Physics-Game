@@ -10,9 +10,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField]private Animator animator;
 
-    public bool isGrounded;
-    public bool isWalking;
-
     private bool facingRight;
     private float horizontalMovement;
     private Transform player;
