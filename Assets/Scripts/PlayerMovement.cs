@@ -23,11 +23,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TestEvent()//не нужный метод, он здесь для тестирования event-ов
-    {
-        Debug.Log("event is working");
-    }
-
     private void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
