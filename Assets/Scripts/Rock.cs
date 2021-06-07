@@ -8,7 +8,7 @@ public class Rock : MonoBehaviour
     [SerializeField] public Rigidbody2D ShootRigid;
     [SerializeField] private GameObject StonePrefab;
     [SerializeField] private Transform SpawnPos;
-    [SerializeField] private bool isPressed = false;
+    [SerializeField] private bool isPressed;
     [SerializeField] private float maxDistance = 1f;
 
     private void Start() => StoneRigid = GetComponent<Rigidbody2D>();
