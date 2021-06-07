@@ -23,11 +23,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TestEvent()//не нужный метод, он здесь для тестирования event-ов
-    {
-        Debug.Log("event is working");
-    }
-
     private void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
@@ -42,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += new Vector3(horizontalMovement, 0, 0) * Time.deltaTime * speed;
+        rb.velocity = new Vector2(horizontalMovement * speed, rb.velocity.y);
     }   
 
     private void Flip()
