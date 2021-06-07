@@ -8,13 +8,16 @@ public class IfEnteredTriggerSmth : MonoBehaviour
 {
     public UnityEvent DoSmth;
 
+    private bool isActive;
+
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
-        {
+        if (!isActive)
+        { 
             Debug.Log("enter");
             DoSmth?.Invoke();
+            isActive = true;
         }
     }
 }

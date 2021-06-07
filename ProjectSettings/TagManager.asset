@@ -8,6 +8,7 @@ TagManager:
   - legs - Wall
   - Target
   - Mirror
+  - 2d water
   layers:
   - Default
   - TransparentFX
