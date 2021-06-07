@@ -10,6 +10,7 @@ TagManager:
   - Mirror
   - 2d water
   - CameraTrigger
+  - Stone
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,6 @@ TagManager:
   - world
   - PlayerLayer
   - BackGround
-  - 
   - 
   - 
   - 
