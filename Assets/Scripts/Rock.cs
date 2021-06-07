@@ -9,6 +9,7 @@ public class Rock : MonoBehaviour
     [SerializeField] private Transform SpawnPos;
     [SerializeField] private bool isPressed;
     [SerializeField] private float maxDistance = 1f;
+    [SerializeField] private GameObject Stone;
 
     private Collider2D collider;
 
@@ -54,6 +55,11 @@ public class Rock : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         if (StonePrefab != null)
+        {
             StonePrefab.transform.position = SpawnPos.position;
+        }
+
+        yield return new WaitForSeconds(1f);
+        Stone?.SetActive(false);
     }
 }
