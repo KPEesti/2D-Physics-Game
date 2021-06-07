@@ -11,7 +11,13 @@ public class Rock : MonoBehaviour
     [SerializeField] private bool isPressed;
     [SerializeField] private float maxDistance = 1f;
 
-    private void Start() => StoneRigid = GetComponent<Rigidbody2D>();
+    private Collider2D collider;
+
+    private void Start()
+    {
+        StoneRigid = GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
+    }
 
     private void Update()
     {
@@ -35,6 +41,7 @@ public class Rock : MonoBehaviour
     {
         isPressed = false;
         StoneRigid.isKinematic = false;
+        collider.isTrigger = false;
 
         StartCoroutine(LetGo());
     }
