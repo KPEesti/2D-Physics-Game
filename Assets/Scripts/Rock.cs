@@ -8,7 +8,7 @@ public class Rock : MonoBehaviour
     [SerializeField] public Rigidbody2D ShootRigid;
     [SerializeField] private GameObject StonePrefab;
     [SerializeField] private Transform SpawnPos;
-    [SerializeField] private bool isPressed = false;
+    [SerializeField] private bool isPressed;
     [SerializeField] private float maxDistance = 1f;
 
     private void Start() => StoneRigid = GetComponent<Rigidbody2D>();
@@ -17,7 +17,7 @@ public class Rock : MonoBehaviour
     {
         if (isPressed)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (Vector2.Distance(mousePos, ShootRigid.position) > maxDistance)
                 StoneRigid.position = ShootRigid.position + (mousePos - ShootRigid.position).normalized * maxDistance;

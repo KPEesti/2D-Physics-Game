@@ -9,7 +9,7 @@ public class DragScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var mousePos = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transition = mousePos - transform.parent.position;
         reflector = transform.parent.GetComponent<RayReflector>();
     }
@@ -17,7 +17,7 @@ public class DragScript : MonoBehaviour
     public void OnMouseDrag()
     {
         var pos = transform.parent.position;
-        var x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transition.x;
+        var x = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transition.x;
         transform.parent.position = new Vector3(x, pos.y);
 
         reflector.UpdateRay();
