@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Rock : MonoBehaviour
 {
-
     [SerializeField] private Rigidbody2D StoneRigid;
     [SerializeField] public Rigidbody2D ShootRigid;
     [SerializeField] private GameObject StonePrefab;
