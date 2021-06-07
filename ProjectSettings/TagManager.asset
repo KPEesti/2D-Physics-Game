@@ -9,6 +9,7 @@ TagManager:
   - Target
   - Mirror
   - 2d water
+  - CameraTrigger
   layers:
   - Default
   - TransparentFX
