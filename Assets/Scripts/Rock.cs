@@ -15,9 +15,9 @@ public class Rock : MonoBehaviour
 
     private void Update()
     {
-        if (isPressed == true)
+        if (isPressed)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (Vector2.Distance(mousePos, ShootRigid.position) > maxDistance)
                 StoneRigid.position = ShootRigid.position + (mousePos - ShootRigid.position).normalized * maxDistance;

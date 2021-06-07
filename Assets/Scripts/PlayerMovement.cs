@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private Transform leg;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField]private Animator animator;
 
     private bool facingRight;
     private float horizontalMovement;
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TestEvent()//не нужный метод, он здесь для тестирования event-ов
+    public void TestEvent()//РЅРµ РЅСѓР¶РЅС‹Р№ РјРµС‚РѕРґ, РѕРЅ Р·РґРµСЃСЊ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ event-РѕРІ
     {
         Debug.Log("event is working");
     }
@@ -30,20 +31,19 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal");
-
-        isGrounded = Physics2D.OverlapCircle(leg.position, 0.4f, whatIsGround);
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
-            rb.velocity = Vector2.up * jumpForce;
+        
+        JumpLogic();
 
         if (horizontalMovement < 0 && facingRight || horizontalMovement > 0 && !facingRight)
             Flip();
+        
+        animator.SetBool("IsMoving", horizontalMovement != 0);
     }
 
     private void FixedUpdate()
     {
         transform.position += new Vector3(horizontalMovement, 0, 0) * Time.deltaTime * speed;
-    }
+    }   
 
     private void Flip()
     {
@@ -51,8 +51,18 @@ public class PlayerMovement : MonoBehaviour
         player.localScale = new Vector3(-player.localScale.x, player.localScale.y, player.localScale.z);
     }
 
+    private void JumpLogic()
+    {
+        isGrounded = Physics2D.OverlapCircle(leg.position, 0.4f, whatIsGround);
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+            rb.velocity = Vector2.up * jumpForce;
+        
+        animator.SetBool("IsGrounded", isGrounded);
+    }
+
     public void TestTrigger()
     {
-        Debug.Log("Игрок вошёл в триггер");
+        Debug.Log("РРіСЂРѕРє РІРѕС€С‘Р» РІ С‚СЂРёРіРіРµСЂ");
     }
 }
