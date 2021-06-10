@@ -6,6 +6,7 @@ using UnityEngine;
 public class NewLaserSource : MonoBehaviour
 {
     public int numberReflectionMax = 5;
+    public GameObject[] ignoreAsLastObject;
 
     [HideInInspector]
     public GameObject lastRaycastedObject;
@@ -49,8 +50,21 @@ public class NewLaserSource : MonoBehaviour
                 pos = (Vector2)directLaser.normalized + hit.point;
                 lineRenderer.SetPosition(countLaser - 1, hit.point); // при этом рисуем точку касания без изменений
 
-                lastRaycastedObject = hit.collider.gameObject;
-                Debug.Log("Last raycasted obj: "+lastRaycastedObject.name);
+                var inIgnoreList = false;
+                if (ignoreAsLastObject != null)
+                {
+                    foreach (var obj in ignoreAsLastObject)
+                    {
+                        inIgnoreList = hit.collider.gameObject.name.Equals(obj.name);
+                        if (inIgnoreList) break;
+                    }
+                }
+
+                if (!inIgnoreList)
+                {
+                    lastRaycastedObject = hit.collider.gameObject;
+                    Debug.Log("Last raycasted obj: " + lastRaycastedObject.name);
+                }
             }
             else
             {
