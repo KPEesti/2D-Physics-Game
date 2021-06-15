@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
         if (sceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             Invoke("LoadMainMenu", 0f);
+            PlayerPrefs.DeleteAll();
         }
         else
         {
@@ -37,9 +38,8 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(sceneIndex + 1);
     }
 
-    private void LoadMainMenu()
+    public void LoadMainMenu()
     {
         SceneManager.LoadScene("_Menu");
-        PlayerPrefs.DeleteAll();
     }
 }
