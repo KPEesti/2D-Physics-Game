@@ -53,9 +53,4 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsGrounded", isGrounded);
     }
-
-    public void TestTrigger()
-    {
-        Debug.Log("Игрок вошёл в триггер");
-    }
 }

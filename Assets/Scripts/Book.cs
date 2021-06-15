@@ -15,11 +15,11 @@ public class Book : MonoBehaviour
 
     public void PreviousBook() => ChangeBookPage(index - 1 < 0 ? BooksMenu.Count - 1 : index - 1);
 
-    private void ChangeBookState(bool setActive, float timeScale)
+    private void ChangeBookState(bool isActive, float timeScale)
     {
-        BooksMenu[index].SetActive(setActive);
+        BooksMenu[index].SetActive(isActive);
         Time.timeScale = timeScale;
-        BookIsOpen = setActive;
+        BookIsOpen = isActive;
     }
 
     private void ChangeBookPage(int index)
